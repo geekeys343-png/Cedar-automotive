@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" fill="none">
+  <!-- Car silhouette -->
+  <path d="M30 68 C30 68, 45 42, 85 34 C125 26, 155 28, 175 30 C195 32, 220 24, 255 20 C290 16, 320 28, 330 38 C335 43, 338 50, 338 55"
+        stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M30 68 C30 68, 55 58, 90 56 C125 54, 165 55, 210 58 C255 61, 300 56, 338 55"
+        stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Roof line -->
+  <path d="M120 34 C120 34, 150 20, 200 18 C250 16, 290 22, 310 30"
+        stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Window line -->
+  <path d="M140 38 C160 30, 195 26, 230 26 C265 26, 290 30, 300 34"
+        stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- CEDAR text -->
+  <text x="180" y="78" text-anchor="middle" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-size="26" font-weight="400" letter-spacing="6" fill="white">CEDAR</text>
+
+  <!-- Red accent lines -->
+  <line x1="72" y1="96" x2="112" y2="96" stroke="#E31E24" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="248" y1="96" x2="288" y2="96" stroke="#E31E24" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- AUTOMOTIVE text -->
+  <text x="180" y="103" text-anchor="middle" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="4" fill="white">AUTOMOTIVE</text>
+</svg>
