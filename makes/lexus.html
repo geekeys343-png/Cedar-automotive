@@ -122,6 +122,14 @@
             "name": "Lexus Suspension Service",
             "description": "Lexus suspension repair including struts, control arms, bushings, sway bar links, and adaptive suspension diagnostics."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Lexus Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Lexus vehicles."
+          }
         }
       ]
     },
@@ -132,63 +140,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Lexus",
-        "item": "https://cedar-automotive.com/makes/lexus.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Lexus",
+      "item": "https://cedar-automotive.com/makes/lexus.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Can an independent shop properly service a Lexus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. Lexus vehicles are built on Toyota platforms and use proven, well-documented powertrains and electronics. Cedar Automotive carries professional-grade diagnostic scanners that read manufacturer-specific fault codes across all Lexus modules. We use OE-quality parts and follow factory service procedures, giving you the same level of care as the dealership at a significantly lower cost."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you service Lexus hybrid models?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We service all Lexus hybrid models including the RX Hybrid, ES Hybrid, NX Hybrid, and UX Hybrid. Our technicians are trained in hybrid system diagnostics and can perform battery health checks, inverter coolant service, regenerative brake maintenance, and standard powertrain repairs on all Lexus hybrid vehicles."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What Lexus models do you work on?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We service all Lexus models including the RX and NX crossovers, ES and IS sedans, GX and LX SUVs, LC and RC coupes, and all hybrid variants. Whether your Lexus is brand new or has 200,000 miles, we have the tools and experience to maintain and repair it properly."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can an independent shop properly service a Lexus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Lexus vehicles are built on Toyota platforms and use proven, well-documented powertrains and electronics. Cedar Automotive carries professional-grade diagnostic scanners that read manufacturer-specific fault codes across all Lexus modules. We use OE-quality parts and follow factory service procedures, giving you the same level of care as the dealership at a significantly lower cost."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you service Lexus hybrid models?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We service all Lexus hybrid models including the RX Hybrid, ES Hybrid, NX Hybrid, and UX Hybrid. Our technicians are trained in hybrid system diagnostics and can perform battery health checks, inverter coolant service, regenerative brake maintenance, and standard powertrain repairs on all Lexus hybrid vehicles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Lexus models do you work on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We service all Lexus models including the RX and NX crossovers, ES and IS sedans, GX and LX SUVs, LC and RC coupes, and all hybrid variants. Whether your Lexus is brand new or has 200,000 miles, we have the tools and experience to maintain and repair it properly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Lexus keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Lexus keys and smart key fobs for all models including RX, NX, ES, IS, and GX. Lexus key programming requires professional-grade equipment. We handle smart key fob replacement and all-keys-lost situations at significant savings over the Lexus dealer. Call (319) 450-7584 for a quote."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -272,6 +288,7 @@
               <li>Electrical diagnostics and infotainment troubleshooting</li>
               <li>Suspension service — struts, control arms, bushings, and sway bar links</li>
               <li>Timing belt and timing chain replacement at factory-recommended intervals</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -364,6 +381,9 @@
           <a href="../services/suspension-steering.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#9881;</span> Suspension &amp; Steering
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -385,6 +405,10 @@
           <details class="faq-item">
             <summary>What Lexus models do you work on?</summary>
             <p>We service all Lexus models including the RX and NX crossovers, ES and IS sedans, GX and LX SUVs, LC and RC coupes, and all hybrid variants. Whether your Lexus is brand new or has 200,000 miles, we have the tools and experience to maintain and repair it properly.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Lexus keys and fobs?</summary>
+            <p>Yes — we program Lexus keys and smart key fobs for all models including RX, NX, ES, IS, and GX. Lexus key programming requires professional-grade equipment. We handle smart key fob replacement and all-keys-lost situations at significant savings over the Lexus dealer. Call (319) 450-7584 for a quote.</p>
           </details>
         </div>
       </div>

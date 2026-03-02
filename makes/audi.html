@@ -82,7 +82,16 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Audi Electrical & MMI Diagnostics"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Audi Timing Chain & Belt Service"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Audi Brake Service & Repair"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Audi Suspension & Steering Repair"}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Audi Suspension & Steering Repair"}
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Audi Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Audi vehicles including European diagnostic access."
+          }
+        }
       ]
     },
     "knowsAbout": ["Audi repair", "European vehicle repair", "Audi TSI engine", "Audi TFSI engine", "Audi Quattro", "Audi DSG transmission", "Audi S-tronic", "Audi MMI diagnostics"],
@@ -93,63 +102,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Audi",
-        "item": "https://cedar-automotive.com/makes/audi.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Audi",
+      "item": "https://cedar-automotive.com/makes/audi.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you have the right diagnostic tools for Audi vehicles?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Cedar Automotive carries dealer-level diagnostic equipment specifically designed for Audi and the broader VAG platform. We can read manufacturer-specific fault codes, run guided fault-finding procedures, perform coding and adaptations, and access systems like MMI, Quattro, and DSG that generic scan tools cannot reach."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How often does my Audi need an oil change?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most modern Audi TSI and TFSI engines use a long-life service interval that can stretch to 10,000 miles, but we recommend changing your oil every 5,000 to 7,500 miles — especially in Iowa's temperature extremes. Audi engines run tight tolerances and are prone to oil consumption, so shorter intervals help protect against premature wear. We use Audi-approved VW 502/504 specification oil."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is it cheaper to service my Audi at an independent shop vs. the dealership?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In most cases, yes. Cedar Automotive uses the same dealer-level diagnostic tools and OEM-quality parts, but our labor rates are significantly lower than dealership pricing. You get the same expertise and equipment without the dealership markup — and your manufacturer warranty is protected under federal law."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you have the right diagnostic tools for Audi vehicles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cedar Automotive carries dealer-level diagnostic equipment specifically designed for Audi and the broader VAG platform. We can read manufacturer-specific fault codes, run guided fault-finding procedures, perform coding and adaptations, and access systems like MMI, Quattro, and DSG that generic scan tools cannot reach."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "How often does my Audi need an oil change?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most modern Audi TSI and TFSI engines use a long-life service interval that can stretch to 10,000 miles, but we recommend changing your oil every 5,000 to 7,500 miles — especially in Iowa's temperature extremes. Audi engines run tight tolerances and are prone to oil consumption, so shorter intervals help protect against premature wear. We use Audi-approved VW 502/504 specification oil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it cheaper to service my Audi at an independent shop vs. the dealership?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most cases, yes. Cedar Automotive uses the same dealer-level diagnostic tools and OEM-quality parts, but our labor rates are significantly lower than dealership pricing. You get the same expertise and equipment without the dealership markup — and your manufacturer warranty is protected under federal law."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Audi keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Audi keys, key fobs, and proximity keys for all models. Audi key programming requires specialized equipment that communicates with the immobilizer system at the manufacturer level. We handle spare key creation, key fob replacement, and all-keys-lost situations. Call (319) 450-7584 for pricing."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -233,6 +250,7 @@
               <li>Timing chain and timing belt replacement (2.0T, 3.0T, 4.2L)</li>
               <li>Brake pad, rotor, and caliper service including electronic parking brake reset</li>
               <li>Suspension and steering repair including adaptive dampers and air suspension</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -331,6 +349,9 @@
           <a href="../services/suspension-steering.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#x1f698;</span> Suspension &amp; Steering
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -352,6 +373,10 @@
           <details class="faq-item">
             <summary>Is it cheaper to service my Audi at an independent shop vs. the dealership?</summary>
             <p>In most cases, yes. Cedar Automotive uses the same dealer-level diagnostic tools and OEM-quality parts, but our labor rates are significantly lower than dealership pricing. You get the same expertise and equipment without the dealership markup — and your manufacturer warranty is protected under federal law.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Audi keys and fobs?</summary>
+            <p>Yes — we program Audi keys, key fobs, and proximity keys for all models. Audi key programming requires specialized equipment that communicates with the immobilizer system at the manufacturer level. We handle spare key creation, key fob replacement, and all-keys-lost situations. Call (319) 450-7584 for pricing.</p>
           </details>
         </div>
       </div>

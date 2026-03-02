@@ -122,6 +122,14 @@
             "name": "GMC Duramax Diesel Service",
             "description": "Duramax diesel maintenance and repair including fuel system service, DEF system diagnosis, turbo inspection, and glow plug replacement."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "GMC Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for GMC vehicles."
+          }
         }
       ]
     },
@@ -132,63 +140,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "GMC",
-        "item": "https://cedar-automotive.com/makes/gmc.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "GMC",
+      "item": "https://cedar-automotive.com/makes/gmc.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What GMC models do you service?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Cedar Automotive services the full GMC lineup including the Sierra 1500, 2500HD, and 3500HD trucks, Terrain and Acadia SUVs, Yukon and Yukon XL full-size SUVs, and Canyon mid-size trucks. We work on both gasoline and Duramax diesel powertrains across all model years."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you fix the AFM or DFM lifter tick on my GMC Sierra?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Active Fuel Management and Dynamic Fuel Management lifter failure is one of the most common issues we see on GM trucks. We diagnose which lifters have collapsed using manufacturer-specific scan data and can replace the affected lifters, VLOM assembly, and related components to restore proper engine operation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work on Duramax diesel GMC trucks?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. We service all generations of the Duramax diesel including fuel system maintenance, DEF system diagnosis, turbo inspection, injector testing, and emissions system repairs. We carry the diagnostic tools needed to properly communicate with Duramax engine and aftertreatment modules."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What GMC models do you service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cedar Automotive services the full GMC lineup including the Sierra 1500, 2500HD, and 3500HD trucks, Terrain and Acadia SUVs, Yukon and Yukon XL full-size SUVs, and Canyon mid-size trucks. We work on both gasoline and Duramax diesel powertrains across all model years."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fix the AFM or DFM lifter tick on my GMC Sierra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Active Fuel Management and Dynamic Fuel Management lifter failure is one of the most common issues we see on GM trucks. We diagnose which lifters have collapsed using manufacturer-specific scan data and can replace the affected lifters, VLOM assembly, and related components to restore proper engine operation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work on Duramax diesel GMC trucks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We service all generations of the Duramax diesel including fuel system maintenance, DEF system diagnosis, turbo inspection, injector testing, and emissions system repairs. We carry the diagnostic tools needed to properly communicate with Duramax engine and aftertreatment modules."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program GMC keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program GMC keys and key fobs for all models including Sierra, Terrain, Acadia, Yukon, and Canyon. We handle transponder key programming, proximity fob replacement, and all-keys-lost situations at a fraction of dealer cost. Call (319) 450-7584 for a quote."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -272,6 +288,7 @@
               <li>Suspension and steering service — shocks, struts, ball joints, tie rods</li>
               <li>4WD and AWD system service — transfer case, front and rear differentials</li>
               <li>Duramax diesel maintenance — fuel system, DEF, turbo, glow plugs, injectors</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -364,6 +381,9 @@
           <a href="../services/suspension-steering.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#128664;</span> Suspension &amp; Steering
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -385,6 +405,10 @@
           <details class="faq-item">
             <summary>Do you work on Duramax diesel GMC trucks?</summary>
             <p>Absolutely. We service all generations of the Duramax diesel including fuel system maintenance, DEF system diagnosis, turbo inspection, injector testing, and emissions system repairs. We carry the diagnostic tools needed to properly communicate with Duramax engine and aftertreatment modules.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program GMC keys and fobs?</summary>
+            <p>Yes — we program GMC keys and key fobs for all models including Sierra, Terrain, Acadia, Yukon, and Canyon. We handle transponder key programming, proximity fob replacement, and all-keys-lost situations at a fraction of dealer cost. Call (319) 450-7584 for a quote.</p>
           </details>
         </div>
       </div>

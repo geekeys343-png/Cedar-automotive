@@ -82,6 +82,14 @@
             "name": "Hyundai Repair & Service",
             "description": "Complete Hyundai repair and maintenance for Elantra, Tucson, Santa Fe, Sonata, Kona, Palisade, and all other Hyundai models in Cedar Rapids, IA."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hyundai Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Hyundai vehicles."
+          }
         }
       ]
     },
@@ -92,63 +100,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Hyundai",
-        "item": "https://cedar-automotive.com/makes/hyundai.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hyundai",
+      "item": "https://cedar-automotive.com/makes/hyundai.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is my Hyundai affected by the Theta II engine recall?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Many Hyundai models with the 2.0L and 2.4L Theta II engine are affected by recalls related to engine bearing failure and seizure. At Cedar Automotive, we can check your VIN, diagnose engine knocking or oil consumption issues, and perform the necessary repairs. Call (319) 450-7584 to schedule an inspection."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you service Hyundai DCT transmissions in Cedar Rapids?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Hyundai's dual-clutch transmission (DCT) requires specialized knowledge to diagnose and service properly. We handle DCT hesitation, shuddering, and clutch pack replacement for Elantra, Tucson, Kona, and Veloster models."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How often should I change the oil in my Hyundai?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most Hyundai models recommend oil changes every 5,000 to 7,500 miles with synthetic oil. However, if your Hyundai has a Theta II engine or you've noticed oil consumption between changes, we may recommend shorter intervals. We'll advise you based on your specific model and driving habits."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my Hyundai affected by the Theta II engine recall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many Hyundai models with the 2.0L and 2.4L Theta II engine are affected by recalls related to engine bearing failure and seizure. At Cedar Automotive, we can check your VIN, diagnose engine knocking or oil consumption issues, and perform the necessary repairs. Call (319) 450-7584 to schedule an inspection."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you service Hyundai DCT transmissions in Cedar Rapids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Hyundai's dual-clutch transmission (DCT) requires specialized knowledge to diagnose and service properly. We handle DCT hesitation, shuddering, and clutch pack replacement for Elantra, Tucson, Kona, and Veloster models."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I change the oil in my Hyundai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Hyundai models recommend oil changes every 5,000 to 7,500 miles with synthetic oil. However, if your Hyundai has a Theta II engine or you've noticed oil consumption between changes, we may recommend shorter intervals. We'll advise you based on your specific model and driving habits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Hyundai keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Hyundai keys and key fobs for all models including Tucson, Santa Fe, Elantra, Sonata, and Kona. We handle transponder key programming, smart key fob replacement, and all-keys-lost situations at independent shop prices. Call (319) 450-7584 for pricing."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -232,6 +248,7 @@
               <li>Suspension and steering repair</li>
               <li>AC and heating system service</li>
               <li>Timing chain inspection, tensioner, and replacement</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -337,6 +354,9 @@
           <a href="../services/preventive-maintenance.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#x1F6E1;&#xFE0F;</span> Preventive Maintenance
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -358,6 +378,10 @@
           <details class="faq-item">
             <summary>How often should I change the oil in my Hyundai?</summary>
             <p>Most Hyundai models recommend oil changes every 5,000 to 7,500 miles with synthetic oil. However, if your Hyundai has a Theta II engine or you've noticed oil consumption between changes, we may recommend shorter intervals. We'll advise you based on your specific model and driving habits.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Hyundai keys and fobs?</summary>
+            <p>Yes — we program Hyundai keys and key fobs for all models including Tucson, Santa Fe, Elantra, Sonata, and Kona. We handle transponder key programming, smart key fob replacement, and all-keys-lost situations at independent shop prices. Call (319) 450-7584 for pricing.</p>
           </details>
         </div>
       </div>

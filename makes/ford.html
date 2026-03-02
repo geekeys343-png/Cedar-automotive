@@ -82,6 +82,14 @@
             "name": "Ford Repair & Service",
             "description": "Complete Ford repair and maintenance in Cedar Rapids — F-150, Explorer, Escape, Mustang, Edge, Ranger. EcoBoost turbo, 10-speed transmission, Power Stroke diesel, and full electrical diagnostics."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ford Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Ford vehicles."
+          }
         }
       ]
     },
@@ -92,63 +100,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Ford",
-        "item": "https://cedar-automotive.com/makes/ford.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ford",
+      "item": "https://cedar-automotive.com/makes/ford.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does Ford F-150 repair cost in Cedar Rapids?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Repair costs vary depending on the issue. Cedar Automotive provides honest, upfront estimates before any work begins — no surprises. Call (319) 450-7584 for a quote on your F-150."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you service Ford EcoBoost engines?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We service all EcoBoost engines including the 1.0L, 1.5L, 2.0L, 2.3L, and 3.5L turbo variants. We handle turbocharger issues, water pump replacement, carbon buildup, and boost leaks."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you fix the Ford 10-speed transmission shudder?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The 10R80 10-speed transmission shudder is a common issue in F-150s and other Ford models. We diagnose the root cause — whether it's a fluid flush, adaptive relearn, valve body service, or clutch pack replacement — and fix it right the first time."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Ford F-150 repair cost in Cedar Rapids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Repair costs vary depending on the issue. Cedar Automotive provides honest, upfront estimates before any work begins — no surprises. Call (319) 450-7584 for a quote on your F-150."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you service Ford EcoBoost engines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We service all EcoBoost engines including the 1.0L, 1.5L, 2.0L, 2.3L, and 3.5L turbo variants. We handle turbocharger issues, water pump replacement, carbon buildup, and boost leaks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fix the Ford 10-speed transmission shudder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The 10R80 10-speed transmission shudder is a common issue in F-150s and other Ford models. We diagnose the root cause — whether it's a fluid flush, adaptive relearn, valve body service, or clutch pack replacement — and fix it right the first time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Ford keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Ford keys and key fobs for all models including F-150, Explorer, Escape, Mustang, Edge, and Ranger. We handle transponder keys, proximity fobs, and all-keys-lost programming. Save significantly compared to dealer pricing. Call (319) 450-7584 for a quote."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -232,6 +248,7 @@
               <li>Suspension, steering, and alignment</li>
               <li>4x4 and AWD system service (transfer case, hubs, differentials)</li>
               <li>Power Stroke diesel service (6.0L, 6.7L, 7.3L)</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -330,6 +347,9 @@
           <a href="../services/electrical-diagnostics.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">⚡</span> Electrical System Diagnostics
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -351,6 +371,10 @@
           <details class="faq-item">
             <summary>Can you fix the Ford 10-speed transmission shudder?</summary>
             <p>Yes. The 10R80 10-speed transmission shudder is a common issue in F-150s and other Ford models. We diagnose the root cause — whether it's a fluid flush, adaptive relearn, valve body service, or clutch pack replacement — and fix it right the first time.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Ford keys and fobs?</summary>
+            <p>Yes — we program Ford keys and key fobs for all models including F-150, Explorer, Escape, Mustang, Edge, and Ranger. We handle transponder keys, proximity fobs, and all-keys-lost programming. Save significantly compared to dealer pricing. Call (319) 450-7584 for a quote.</p>
           </details>
         </div>
       </div>

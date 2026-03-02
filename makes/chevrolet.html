@@ -83,6 +83,14 @@
             "name": "Chevrolet Repair & Service",
             "description": "Complete Chevrolet and Chevy repair services including oil changes, brake repair, transmission service, engine diagnostics, electrical diagnostics, suspension and steering, AC service, and 4WD/AWD systems for all Chevy models."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Chevrolet Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Chevrolet vehicles."
+          }
         }
       ]
     },
@@ -93,63 +101,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/#vehicles"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Chevrolet",
-        "item": "https://cedar-automotive.com/makes/chevrolet.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/#vehicles"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Chevrolet",
+      "item": "https://cedar-automotive.com/makes/chevrolet.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does Chevrolet repair cost in Cedar Rapids?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Chevrolet repair costs vary by service. Cedar Automotive provides upfront estimates before any work begins so there are no surprises. Call (319) 450-7584 for a quote on your specific Chevy model."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you use OEM parts for Chevrolet repairs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We offer both OEM and high-quality aftermarket parts for Chevrolet repairs. We discuss your options and preferences before ordering parts so you can choose what fits your budget and needs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you service newer Chevrolet models with advanced electronics?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Cedar Automotive carries professional-grade diagnostic equipment capable of reading GM-specific fault codes and programming modules on newer Chevrolet vehicles, including advanced driver-assist and infotainment systems."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Chevrolet repair cost in Cedar Rapids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chevrolet repair costs vary by service. Cedar Automotive provides upfront estimates before any work begins so there are no surprises. Call (319) 450-7584 for a quote on your specific Chevy model."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you use OEM parts for Chevrolet repairs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer both OEM and high-quality aftermarket parts for Chevrolet repairs. We discuss your options and preferences before ordering parts so you can choose what fits your budget and needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you service newer Chevrolet models with advanced electronics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cedar Automotive carries professional-grade diagnostic equipment capable of reading GM-specific fault codes and programming modules on newer Chevrolet vehicles, including advanced driver-assist and infotainment systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Chevrolet keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Chevrolet keys and key fobs for all models including Silverado, Equinox, Malibu, Traverse, and Tahoe. We handle transponder key programming, proximity fob replacement, and all-keys-lost situations at a fraction of dealer cost. Call (319) 450-7584 for pricing."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -233,6 +249,7 @@
               <li>Suspension and steering repair (shocks, struts, ball joints, tie rods)</li>
               <li>AC recharge, compressor replacement, and climate control service</li>
               <li>4WD and AWD system service (transfer case, front differential, actuators)</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -337,6 +354,9 @@
           <a href="../services/preventive-maintenance.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#x1F6E1;&#xFE0F;</span> Preventive Maintenance
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -358,6 +378,10 @@
           <details class="faq-item">
             <summary>Can you service newer Chevrolet models with advanced electronics?</summary>
             <p>Yes. Cedar Automotive carries professional-grade diagnostic equipment capable of reading GM-specific fault codes and programming modules on newer Chevrolet vehicles, including advanced driver-assist and infotainment systems.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Chevrolet keys and fobs?</summary>
+            <p>Yes — we program Chevrolet keys and key fobs for all models including Silverado, Equinox, Malibu, Traverse, and Tahoe. We handle transponder key programming, proximity fob replacement, and all-keys-lost situations at a fraction of dealer cost. Call (319) 450-7584 for pricing.</p>
           </details>
         </div>
       </div>

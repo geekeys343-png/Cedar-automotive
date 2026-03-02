@@ -84,7 +84,16 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Volkswagen Brake Service"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "VW Electrical Diagnostics"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "VW Suspension & Steering Repair"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Volkswagen Emissions & Exhaust Service"}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Volkswagen Emissions & Exhaust Service"}
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Volkswagen Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Volkswagen vehicles including European diagnostic access."
+          }
+        }
       ]
     },
     "knowsAbout": ["Volkswagen repair", "VW repair", "VW TSI engine", "VW TDI engine", "DSG transmission", "European vehicle repair"],
@@ -95,63 +104,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/index.html#vehicles-heading"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Volkswagen",
-        "item": "https://cedar-automotive.com/makes/volkswagen.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/index.html#vehicles-heading"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Volkswagen",
+      "item": "https://cedar-automotive.com/makes/volkswagen.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is Cedar Automotive a Volkswagen specialist?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Cedar Automotive is a European vehicle specialist in Cedar Rapids. We carry VW-specific diagnostic tools — the same ODIS-compatible equipment used at Volkswagen dealerships — so we can read manufacturer codes, perform adaptations, and service every VW system properly. Jetta, Passat, Tiguan, Golf, Atlas, Taos, and ID.4 owners all trust us for reliable VW repair."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does Volkswagen repair cost compared to the dealership?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our VW repair rates are typically 20-40% less than Cedar Rapids-area Volkswagen dealerships. We use OEM and high-quality aftermarket parts, and our labor rates are lower — all while delivering the same dealer-level diagnostics and expertise. We provide upfront estimates before any work begins."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What Volkswagen models does Cedar Automotive service?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We service every Volkswagen model past and present, including Jetta, Passat, Tiguan, Golf, GTI, Golf R, Atlas, Atlas Cross Sport, Taos, ID.4, Beetle, CC, Touareg, and Arteon. Whether your VW runs a TSI, TDI, or electric powertrain, we have the tools and experience to work on it."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Cedar Automotive a Volkswagen specialist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cedar Automotive is a European vehicle specialist in Cedar Rapids. We carry VW-specific diagnostic tools — the same ODIS-compatible equipment used at Volkswagen dealerships — so we can read manufacturer codes, perform adaptations, and service every VW system properly. Jetta, Passat, Tiguan, Golf, Atlas, Taos, and ID.4 owners all trust us for reliable VW repair."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Volkswagen repair cost compared to the dealership?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our VW repair rates are typically 20-40% less than Cedar Rapids-area Volkswagen dealerships. We use OEM and high-quality aftermarket parts, and our labor rates are lower — all while delivering the same dealer-level diagnostics and expertise. We provide upfront estimates before any work begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Volkswagen models does Cedar Automotive service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We service every Volkswagen model past and present, including Jetta, Passat, Tiguan, Golf, GTI, Golf R, Atlas, Atlas Cross Sport, Taos, ID.4, Beetle, CC, Touareg, and Arteon. Whether your VW runs a TSI, TDI, or electric powertrain, we have the tools and experience to work on it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Volkswagen keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Volkswagen keys and key fobs for all models including Jetta, Passat, Tiguan, Atlas, and Golf. VW key programming requires manufacturer-level diagnostic access. We handle transponder keys, proximity fobs, and all-keys-lost situations. Call (319) 450-7584 for a quote."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -237,6 +254,7 @@
               <li>Electrical diagnostics, module coding, and key/fob programming</li>
               <li>Suspension and steering repair — control arms, struts, tie rods, and bushings</li>
               <li>Emissions system diagnostics, catalytic converter, EGR, and DPF service</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -337,6 +355,9 @@
           <a href="../services/suspension-steering.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#x1f529;</span> Suspension &amp; Steering
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -358,6 +379,10 @@
           <details class="faq-item">
             <summary>What Volkswagen models does Cedar Automotive service?</summary>
             <p>We service every Volkswagen model past and present, including Jetta, Passat, Tiguan, Golf, GTI, Golf R, Atlas, Atlas Cross Sport, Taos, ID.4, Beetle, CC, Touareg, and Arteon. Whether your VW runs a TSI, TDI, or electric powertrain, we have the tools and experience to work on it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Volkswagen keys and fobs?</summary>
+            <p>Yes — we program Volkswagen keys and key fobs for all models including Jetta, Passat, Tiguan, Atlas, and Golf. VW key programming requires manufacturer-level diagnostic access. We handle transponder keys, proximity fobs, and all-keys-lost situations. Call (319) 450-7584 for a quote.</p>
           </details>
         </div>
       </div>

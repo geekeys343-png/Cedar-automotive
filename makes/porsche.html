@@ -82,7 +82,16 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Porsche Engine & IMS Bearing Repair"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Porsche Coolant System Repair"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Porsche Electrical Diagnostics"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Porsche Performance Tuning"}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Porsche Performance Tuning"}
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Porsche Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Porsche vehicles including European diagnostic access."
+          }
+        }
       ]
     },
     "knowsAbout": ["Porsche repair", "Porsche service", "IMS bearing replacement", "PDK transmission service", "PASM suspension repair", "Porsche bore scoring repair", "European vehicle repair", "Porsche coolant pipe repair"],
@@ -93,63 +102,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/#vehicles"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Porsche",
-        "item": "https://cedar-automotive.com/makes/porsche.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/#vehicles"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Porsche",
+      "item": "https://cedar-automotive.com/makes/porsche.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you have Porsche-specific diagnostic equipment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Cedar Automotive carries professional-grade diagnostic tools that read Porsche-specific fault codes across all modern systems including DME engine management, PSM stability control, PASM adaptive suspension, and PDK transmission modules. These are the same tools used at Porsche dealerships."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does Porsche repair cost compared to a dealership?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Independent shops like Cedar Automotive typically save Porsche owners 30-50% over dealership rates on comparable work. We use OEM-quality parts and follow Porsche technical procedures, but without the dealership overhead built into the price. Call (319) 450-7584 for an honest estimate."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What Porsche models does Cedar Automotive service?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We service all Porsche models including the 911 (996, 997, 991, 992), Boxster, Cayman, Cayenne, Macan, Panamera, and Taycan. Whether your Porsche needs routine maintenance or specialized repair work like IMS bearing replacement or PDK service, we have the tools and knowledge to handle it."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you have Porsche-specific diagnostic equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cedar Automotive carries professional-grade diagnostic tools that read Porsche-specific fault codes across all modern systems including DME engine management, PSM stability control, PASM adaptive suspension, and PDK transmission modules. These are the same tools used at Porsche dealerships."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Porsche repair cost compared to a dealership?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Independent shops like Cedar Automotive typically save Porsche owners 30-50% over dealership rates on comparable work. We use OEM-quality parts and follow Porsche technical procedures, but without the dealership overhead built into the price. Call (319) 450-7584 for an honest estimate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Porsche models does Cedar Automotive service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We service all Porsche models including the 911 (996, 997, 991, 992), Boxster, Cayman, Cayenne, Macan, Panamera, and Taycan. Whether your Porsche needs routine maintenance or specialized repair work like IMS bearing replacement or PDK service, we have the tools and knowledge to handle it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Porsche keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Porsche keys and key fobs for all models including Cayenne, Macan, Panamera, and 911. Porsche key programming requires specialized European diagnostic equipment. We handle spare key creation and all-keys-lost situations. Call (319) 450-7584 for pricing."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -233,6 +250,7 @@
               <li>Coolant system service — pipe replacement, expansion tank, and thermostat</li>
               <li>Electrical system diagnostics — DME, PSM, PCM, and module coding</li>
               <li>Performance tuning, exhaust upgrades, and intake modifications</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -328,6 +346,9 @@
           <a href="../services/electrical-diagnostics.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#9889;</span> Electrical System Diagnostics
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -349,6 +370,10 @@
           <details class="faq-item">
             <summary>What Porsche models does Cedar Automotive service?</summary>
             <p>We service all Porsche models including the 911 (996, 997, 991, 992), Boxster, Cayman, Cayenne, Macan, Panamera, and Taycan. Whether your Porsche needs routine maintenance or specialized repair work like IMS bearing replacement or PDK service, we have the tools and knowledge to handle it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Porsche keys and fobs?</summary>
+            <p>Yes — we program Porsche keys and key fobs for all models including Cayenne, Macan, Panamera, and 911. Porsche key programming requires specialized European diagnostic equipment. We handle spare key creation and all-keys-lost situations. Call (319) 450-7584 for pricing.</p>
           </details>
         </div>
       </div>

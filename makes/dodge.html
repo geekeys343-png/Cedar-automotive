@@ -83,6 +83,14 @@
             "name": "Dodge & Ram Repair & Service",
             "description": "Complete repair and maintenance for Dodge and Ram vehicles including HEMI engine service, Cummins diesel repair, transmission service, brakes, electrical diagnostics, and more."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Dodge Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Dodge vehicles."
+          }
         }
       ]
     },
@@ -93,63 +101,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Dodge & Ram",
-        "item": "https://cedar-automotive.com/makes/dodge.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dodge & Ram",
+      "item": "https://cedar-automotive.com/makes/dodge.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you specialize in HEMI engine repairs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Cedar Automotive has extensive experience with the 5.7L and 6.4L HEMI engines found in Ram trucks, Chargers, and Challengers. We handle common issues like HEMI tick and lifter failure, cylinder deactivation problems, and routine maintenance including oil changes with the correct spec fluids."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you work on Ram trucks with Cummins diesel engines?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. We service Ram 2500 and 3500 trucks equipped with the 6.7L Cummins turbo diesel. Our services include fuel system diagnostics, turbo inspection, DEF system service, oil changes, and complete diesel engine repair."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What Dodge and Ram transmission issues do you repair?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We diagnose and repair common Dodge and Ram transmission problems including harsh shifting in the 845RE (TorqueFlite 8) and ZF 8-speed automatics, torque converter shudder, fluid leaks, and complete transmission rebuilds. We also service the 68RFE transmission found in heavy-duty Ram trucks."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you specialize in HEMI engine repairs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cedar Automotive has extensive experience with the 5.7L and 6.4L HEMI engines found in Ram trucks, Chargers, and Challengers. We handle common issues like HEMI tick and lifter failure, cylinder deactivation problems, and routine maintenance including oil changes with the correct spec fluids."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work on Ram trucks with Cummins diesel engines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We service Ram 2500 and 3500 trucks equipped with the 6.7L Cummins turbo diesel. Our services include fuel system diagnostics, turbo inspection, DEF system service, oil changes, and complete diesel engine repair."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Dodge and Ram transmission issues do you repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We diagnose and repair common Dodge and Ram transmission problems including harsh shifting in the 845RE (TorqueFlite 8) and ZF 8-speed automatics, torque converter shudder, fluid leaks, and complete transmission rebuilds. We also service the 68RFE transmission found in heavy-duty Ram trucks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Dodge keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Dodge keys and key fobs for all models including Challenger, Charger, Durango, and Ram trucks. We handle transponder keys, proximity fobs, and all-keys-lost programming at independent shop prices. Call (319) 450-7584 for a quote."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -233,6 +249,7 @@
               <li>Suspension, steering, and ball joint replacement</li>
               <li>4WD and transfer case service</li>
               <li>Cummins diesel engine repair, turbo service, and DEF system maintenance</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -339,6 +356,9 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
             </span> Electrical System Diagnostics
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -360,6 +380,10 @@
           <details class="faq-item">
             <summary>What Dodge and Ram transmission issues do you repair?</summary>
             <p>We diagnose and repair common Dodge and Ram transmission problems including harsh shifting in the 845RE (TorqueFlite 8) and ZF 8-speed automatics, torque converter shudder, fluid leaks, and complete transmission rebuilds. We also service the 68RFE transmission found in heavy-duty Ram trucks.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Dodge keys and fobs?</summary>
+            <p>Yes — we program Dodge keys and key fobs for all models including Challenger, Charger, Durango, and Ram trucks. We handle transponder keys, proximity fobs, and all-keys-lost programming at independent shop prices. Call (319) 450-7584 for a quote.</p>
           </details>
         </div>
       </div>

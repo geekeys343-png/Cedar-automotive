@@ -33,108 +33,124 @@
   <!-- AutoRepair JSON-LD Schema -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "@id": "https://cedar-automotive.com/#autorepair",
-    "name": "Cedar Automotive",
-    "image": "https://cedar-automotive.com/images/cedar-automotive-logo-dark.png",
-    "url": "https://cedar-automotive.com",
-    "telephone": "(319) 450-7584",
-    "email": "Info@cedar-automotive.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1407 Adair Ct SW Suite 101",
-      "addressLocality": "Cedar Rapids",
-      "addressRegion": "IA",
-      "postalCode": "52404",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.96,
-      "longitude": -91.69
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      }
-    ],
-    "knowsAbout": [
-      "auto repair all makes",
-      "domestic vehicle repair",
-      "import vehicle repair",
-      "European car repair",
-      "Asian vehicle repair",
-      "truck repair",
-      "SUV repair"
-    ],
-    "priceRange": "$$"
-  }
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "@id": "https://cedar-automotive.com/#autorepair",
+  "name": "Cedar Automotive",
+  "image": "https://cedar-automotive.com/images/cedar-automotive-logo-dark.png",
+  "url": "https://cedar-automotive.com",
+  "telephone": "(319) 450-7584",
+  "email": "Info@cedar-automotive.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1407 Adair Ct SW Suite 101",
+    "addressLocality": "Cedar Rapids",
+    "addressRegion": "IA",
+    "postalCode": "52404",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.96,
+    "longitude": -91.69
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "knowsAbout": [
+    "auto repair all makes",
+    "domestic vehicle repair",
+    "import vehicle repair",
+    "European car repair",
+    "Asian vehicle repair",
+    "truck repair",
+    "SUV repair",
+    "car key programming",
+    "key fob programming"
+  ],
+  "priceRange": "$$"
+}
   </script>
 
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/#vehicles-heading"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "All Makes & Models",
-        "item": "https://cedar-automotive.com/makes/all-other-makes.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/#vehicles-heading"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "All Makes & Models",
+      "item": "https://cedar-automotive.com/makes/all-other-makes.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you work on all car brands?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Cedar Automotive services every make and model — domestic brands like Ford, Chevy, and Dodge, imports like Toyota, Honda, and Nissan, and European vehicles like BMW, Audi, and Mercedes-Benz. If it has an engine, we can fix it."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you work on older or less common vehicles?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. We service everything from classic cars and older trucks to newer models from brands like Genesis, Mazda, Mitsubishi, MINI, Fiat, Jaguar, Land Rover, and more. Our diagnostic equipment covers virtually every vehicle on the road."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you charge more for luxury or European vehicles?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our labor rates are the same for every vehicle. Some European and luxury vehicles require specialty parts that cost more, but our labor is fair and transparent regardless of what you drive. We always provide an upfront estimate before starting work."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you work on all car brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cedar Automotive services every make and model — domestic brands like Ford, Chevy, and Dodge, imports like Toyota, Honda, and Nissan, and European vehicles like BMW, Audi, and Mercedes-Benz. If it has an engine, we can fix it."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work on older or less common vehicles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We service everything from classic cars and older trucks to newer models from brands like Genesis, Mazda, Mitsubishi, MINI, Fiat, Jaguar, Land Rover, and more. Our diagnostic equipment covers virtually every vehicle on the road."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you charge more for luxury or European vehicles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our labor rates are the same for every vehicle. Some European and luxury vehicles require specialty parts that cost more, but our labor is fair and transparent regardless of what you drive. We always provide an upfront estimate before starting work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program car keys and key fobs for any make?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program car keys, key fobs, transponder keys, and proximity fobs for virtually every make and model. We specialize in European key programming (BMW, Audi, Mercedes, Volvo) that most locksmiths can't handle. We also handle all-keys-lost situations where every key has been lost. Call (319) 450-7584 for pricing."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -318,6 +334,10 @@
           <details class="faq-item">
             <summary>Do you charge more for luxury or European vehicles?</summary>
             <p>Our labor rates are the same for every vehicle. Some European and luxury vehicles require specialty parts that cost more, but our labor is fair and transparent regardless of what you drive. We always provide an upfront estimate before starting work.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program car keys and key fobs for any make?</summary>
+            <p>Yes — we program car keys, key fobs, transponder keys, and proximity fobs for virtually every make and model. We specialize in European key programming (BMW, Audi, Mercedes, Volvo) that most locksmiths can't handle. We also handle all-keys-lost situations where every key has been lost. Call (319) 450-7584 for pricing.</p>
           </details>
         </div>
       </div>

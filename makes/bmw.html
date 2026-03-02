@@ -122,6 +122,14 @@
             "name": "BMW Suspension Service",
             "description": "BMW suspension repair including control arms, thrust arms, bushings, struts, and adaptive suspension diagnostics."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "BMW Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for BMW vehicles including European diagnostic access."
+          }
         }
       ]
     },
@@ -132,63 +140,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "BMW",
-        "item": "https://cedar-automotive.com/makes/bmw.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "BMW",
+      "item": "https://cedar-automotive.com/makes/bmw.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you use BMW-specific diagnostic equipment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Cedar Automotive carries dealer-level diagnostic scanners that communicate with all BMW modules — engine, transmission, ABS, airbag, VANOS, Valvetronic, and body electronics. We read the same manufacturer-specific fault codes that the BMW dealership sees, not just generic OBD-II codes."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is independent BMW repair cheaper than the dealership?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In most cases, yes. Cedar Automotive provides the same quality of service using equivalent diagnostic tools and OE-grade parts, but our labor rates are significantly lower than dealership pricing. You get dealer-level expertise without the dealer-level bill."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What BMW models do you service?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We service all BMW models including the 1, 2, 3, 4, 5, 6, 7, and 8 Series sedans and coupes, X1 through X7 SUVs, Z4 roadsters, and M Performance vehicles. We also work on MINI Cooper models. Whether you have a newer F or G chassis or an older E-chassis BMW, we have the tools and experience to work on it."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you use BMW-specific diagnostic equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cedar Automotive carries dealer-level diagnostic scanners that communicate with all BMW modules — engine, transmission, ABS, airbag, VANOS, Valvetronic, and body electronics. We read the same manufacturer-specific fault codes that the BMW dealership sees, not just generic OBD-II codes."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Is independent BMW repair cheaper than the dealership?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most cases, yes. Cedar Automotive provides the same quality of service using equivalent diagnostic tools and OE-grade parts, but our labor rates are significantly lower than dealership pricing. You get dealer-level expertise without the dealer-level bill."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What BMW models do you service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We service all BMW models including the 1, 2, 3, 4, 5, 6, 7, and 8 Series sedans and coupes, X1 through X7 SUVs, Z4 roadsters, and M Performance vehicles. We also work on MINI Cooper models. Whether you have a newer F or G chassis or an older E-chassis BMW, we have the tools and experience to work on it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program BMW keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program BMW keys, key fobs, and proximity comfort access fobs at a fraction of dealership cost. BMW key programming requires manufacturer-level diagnostic access that most locksmiths don't have. Whether you need a spare key, a replacement fob, or all-keys-lost programming, Cedar Automotive has the equipment to handle it. Call (319) 450-7584 for a quote."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -274,6 +290,7 @@
               <li>Automatic and manual transmission service and repair</li>
               <li>BMW coding, programming, and module registration</li>
               <li>Fuel system service — injector cleaning, high-pressure fuel pump</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -366,6 +383,9 @@
           <a href="../services/brake-repair.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#128736;</span> Brake Service &amp; Repair
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -387,6 +407,10 @@
           <details class="faq-item">
             <summary>What BMW models do you service?</summary>
             <p>We service all BMW models including the 1, 2, 3, 4, 5, 6, 7, and 8 Series sedans and coupes, X1 through X7 SUVs, Z4 roadsters, and M Performance vehicles. We also work on MINI Cooper models. Whether you have a newer F or G chassis or an older E-chassis BMW, we have the tools and experience to work on it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program BMW keys and fobs?</summary>
+            <p>Yes — we program BMW keys, key fobs, and proximity comfort access fobs at a fraction of dealership cost. BMW key programming requires manufacturer-level diagnostic access that most locksmiths don't have. Whether you need a spare key, a replacement fob, or all-keys-lost programming, Cedar Automotive has the equipment to handle it. Call (319) 450-7584 for a quote.</p>
           </details>
         </div>
       </div>

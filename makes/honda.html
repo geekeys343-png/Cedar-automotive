@@ -75,6 +75,14 @@
             "name": "Honda Repair & Service",
             "description": "Complete repair and maintenance for all Honda models including Civic, Accord, CR-V, Pilot, and Odyssey. CVT transmission service, timing belts, AC repair, hybrid service, and more."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Honda Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Honda vehicles."
+          }
         }
       ]
     },
@@ -85,63 +93,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Honda",
-        "item": "https://cedar-automotive.com/makes/honda.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Honda",
+      "item": "https://cedar-automotive.com/makes/honda.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How often should I service my Honda CVT transmission?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Honda recommends CVT fluid changes every 30,000 to 60,000 miles depending on driving conditions. If you notice shuddering, slipping, or delayed engagement, bring your Honda to Cedar Automotive for a CVT inspection right away."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Cedar Automotive work on Honda hybrid vehicles?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We service Honda hybrid models including the Civic Hybrid, Accord Hybrid, CR-V Hybrid, and Insight. Our technicians are equipped to handle hybrid-specific systems including the IMA and two-motor hybrid systems."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "When does my Honda need a timing belt replacement?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Honda models with timing belts (older Accords, Odysseys, Pilots, and Ridgelines with the V6 engine) typically need replacement between 60,000 and 105,000 miles. Newer Honda models use timing chains that generally last the life of the engine but should still be inspected if you hear rattling on cold starts."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should I service my Honda CVT transmission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Honda recommends CVT fluid changes every 30,000 to 60,000 miles depending on driving conditions. If you notice shuddering, slipping, or delayed engagement, bring your Honda to Cedar Automotive for a CVT inspection right away."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Cedar Automotive work on Honda hybrid vehicles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We service Honda hybrid models including the Civic Hybrid, Accord Hybrid, CR-V Hybrid, and Insight. Our technicians are equipped to handle hybrid-specific systems including the IMA and two-motor hybrid systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does my Honda need a timing belt replacement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Honda models with timing belts (older Accords, Odysseys, Pilots, and Ridgelines with the V6 engine) typically need replacement between 60,000 and 105,000 miles. Newer Honda models use timing chains that generally last the life of the engine but should still be inspected if you hear rattling on cold starts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Honda keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Honda keys and key fobs for all models including Civic, Accord, CR-V, Pilot, and Odyssey. We handle transponder key cutting, smart key fob programming, and all-keys-lost situations at independent shop prices. Call (319) 450-7584 for a quote."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -221,6 +237,7 @@
               <li>Suspension and steering repair</li>
               <li>Electrical system diagnostics and repair</li>
               <li>Honda hybrid system service (IMA and two-motor)</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -313,6 +330,9 @@
           <a href="../services/heating-air-conditioning.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#10052;</span> Heating &amp; Air Conditioning
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -334,6 +354,10 @@
           <details class="faq-item">
             <summary>When does my Honda need a timing belt replacement?</summary>
             <p>Honda models with timing belts (older Accords, Odysseys, Pilots, and Ridgelines with the V6 engine) typically need replacement between 60,000 and 105,000 miles. Newer Honda models use timing chains that generally last the life of the engine but should still be inspected if you hear rattling on cold starts.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Honda keys and fobs?</summary>
+            <p>Yes — we program Honda keys and key fobs for all models including Civic, Accord, CR-V, Pilot, and Odyssey. We handle transponder key cutting, smart key fob programming, and all-keys-lost situations at independent shop prices. Call (319) 450-7584 for a quote.</p>
           </details>
         </div>
       </div>

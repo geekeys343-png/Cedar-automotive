@@ -83,6 +83,14 @@
             "name": "Jeep Repair & Service",
             "description": "Complete repair and maintenance for Jeep vehicles including 4WD and transfer case service, suspension and lift inspection, engine diagnostics, transmission repair, electrical troubleshooting, and cooling system service."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Jeep Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Jeep vehicles."
+          }
         }
       ]
     },
@@ -93,63 +101,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Jeep",
-        "item": "https://cedar-automotive.com/makes/jeep.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jeep",
+      "item": "https://cedar-automotive.com/makes/jeep.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Can you fix the Jeep death wobble?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The death wobble is a violent shaking of the front end typically caused by worn steering and suspension components such as the track bar, ball joints, tie rod ends, or steering stabilizer. We inspect every front-end component, identify the root cause, and replace the worn parts to eliminate the wobble for good."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you service Jeep 4WD and transfer case systems?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. We service all Jeep 4WD systems including Command-Trac, Rock-Trac, Selec-Trac, and Quadra-Trac. Our services include transfer case fluid changes, actuator repair, front and rear differential service, and complete 4WD system diagnostics."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What Jeep models do you work on?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We service all Jeep models including the Wrangler (JK and JL), Grand Cherokee (WK2 and WL), Cherokee (KL), Compass, Renegade, and Gladiator. Whether you have a stock daily driver or a modified trail rig, we have the tools and experience to keep it running reliably."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you fix the Jeep death wobble?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The death wobble is a violent shaking of the front end typically caused by worn steering and suspension components such as the track bar, ball joints, tie rod ends, or steering stabilizer. We inspect every front-end component, identify the root cause, and replace the worn parts to eliminate the wobble for good."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you service Jeep 4WD and transfer case systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We service all Jeep 4WD systems including Command-Trac, Rock-Trac, Selec-Trac, and Quadra-Trac. Our services include transfer case fluid changes, actuator repair, front and rear differential service, and complete 4WD system diagnostics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Jeep models do you work on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We service all Jeep models including the Wrangler (JK and JL), Grand Cherokee (WK2 and WL), Cherokee (KL), Compass, Renegade, and Gladiator. Whether you have a stock daily driver or a modified trail rig, we have the tools and experience to keep it running reliably."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Jeep keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Jeep keys and key fobs for all models including Wrangler, Grand Cherokee, Cherokee, Compass, and Gladiator. We handle transponder key programming, proximity fob replacement, and all-keys-lost situations. Call (319) 450-7584 for pricing."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -233,6 +249,7 @@
               <li>Automatic transmission service and repair (ZF 9-speed, 8-speed, and more)</li>
               <li>Electrical system diagnostics and module programming</li>
               <li>Cooling system service, radiator replacement, and thermostat repair</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -339,6 +356,9 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
             </span> Electrical System Diagnostics
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -360,6 +380,10 @@
           <details class="faq-item">
             <summary>What Jeep models do you work on?</summary>
             <p>We service all Jeep models including the Wrangler (JK and JL), Grand Cherokee (WK2 and WL), Cherokee (KL), Compass, Renegade, and Gladiator. Whether you have a stock daily driver or a modified trail rig, we have the tools and experience to keep it running reliably.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Jeep keys and fobs?</summary>
+            <p>Yes — we program Jeep keys and key fobs for all models including Wrangler, Grand Cherokee, Cherokee, Compass, and Gladiator. We handle transponder key programming, proximity fob replacement, and all-keys-lost situations. Call (319) 450-7584 for pricing.</p>
           </details>
         </div>
       </div>

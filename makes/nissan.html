@@ -82,6 +82,14 @@
             "name": "Nissan Repair & Service",
             "description": "Complete Nissan repair and maintenance for Altima, Rogue, Sentra, Pathfinder, Frontier, Titan, and all other Nissan models in Cedar Rapids, IA."
           }
+      },
+      {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Nissan Key & Fob Programming",
+            "description": "Car key programming, key fob replacement, transponder key cutting, and all-keys-lost service for Nissan vehicles."
+          }
         }
       ]
     },
@@ -92,63 +100,71 @@
   <!-- BreadcrumbList JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://cedar-automotive.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Vehicles We Service",
-        "item": "https://cedar-automotive.com/services.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Nissan",
-        "item": "https://cedar-automotive.com/makes/nissan.html"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cedar-automotive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vehicles We Service",
+      "item": "https://cedar-automotive.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Nissan",
+      "item": "https://cedar-automotive.com/makes/nissan.html"
+    }
+  ]
+}
   </script>
 
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does Nissan CVT transmission service cost in Cedar Rapids?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "CVT transmission service costs vary depending on whether you need a fluid change, a valve body repair, or a full rebuild. At Cedar Automotive, we diagnose the issue first and give you an honest, upfront estimate before any work begins. Call (319) 450-7584 for a quote."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you use OEM parts for Nissan repairs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We offer both OEM and quality aftermarket parts for Nissan repairs. We'll discuss your options and let you choose what fits your budget and driving needs — no pressure, just honest advice."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you fix a Nissan check engine light in Cedar Rapids?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We use professional-grade diagnostic scanners to read Nissan-specific fault codes — not just generic OBD-II readers. Whether it's a catalytic converter code, CVT issue, or oxygen sensor, we pinpoint the exact problem and fix it right the first time."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Nissan CVT transmission service cost in Cedar Rapids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CVT transmission service costs vary depending on whether you need a fluid change, a valve body repair, or a full rebuild. At Cedar Automotive, we diagnose the issue first and give you an honest, upfront estimate before any work begins. Call (319) 450-7584 for a quote."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you use OEM parts for Nissan repairs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer both OEM and quality aftermarket parts for Nissan repairs. We'll discuss your options and let you choose what fits your budget and driving needs — no pressure, just honest advice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fix a Nissan check engine light in Cedar Rapids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We use professional-grade diagnostic scanners to read Nissan-specific fault codes — not just generic OBD-II readers. Whether it's a catalytic converter code, CVT issue, or oxygen sensor, we pinpoint the exact problem and fix it right the first time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you program Nissan keys and fobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we program Nissan keys and Intelligent Key fobs for all models including Altima, Rogue, Sentra, Pathfinder, and Frontier. We handle transponder keys, proximity fobs, and all-keys-lost programming at significant savings over the dealer. Call (319) 450-7584 for a quote."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" href="../css/styles.css" as="style">
@@ -232,6 +248,7 @@
               <li>Suspension and steering repair</li>
               <li>AC and heating system service</li>
               <li>Timing chain inspection, tensioner, and replacement</li>
+              <li>Car key and key fob programming</li>
             </ul>
           </div>
           <div class="service-landing-image">
@@ -337,6 +354,9 @@
           <a href="../services/preventive-maintenance.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">&#x1F6E1;&#xFE0F;</span> Preventive Maintenance
           </a>
+          <a href="../services/car-key-programming.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128273;</span> Car Key &amp; Fob Programming
+          </a>
         </div>
       </div>
     </section>
@@ -358,6 +378,10 @@
           <details class="faq-item">
             <summary>Can you fix a Nissan check engine light in Cedar Rapids?</summary>
             <p>Yes. We use professional-grade diagnostic scanners to read Nissan-specific fault codes — not just generic OBD-II readers. Whether it's a catalytic converter code, CVT issue, or oxygen sensor, we pinpoint the exact problem and fix it right the first time.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you program Nissan keys and fobs?</summary>
+            <p>Yes — we program Nissan keys and Intelligent Key fobs for all models including Altima, Rogue, Sentra, Pathfinder, and Frontier. We handle transponder keys, proximity fobs, and all-keys-lost programming at significant savings over the dealer. Call (319) 450-7584 for a quote.</p>
           </details>
         </div>
       </div>
