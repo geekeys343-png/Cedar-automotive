@@ -19,3 +19,6 @@ docs/old-theme/
 # Temp files
 *.tmp
 *.log
+
+# Local Netlify folder
+.netlify

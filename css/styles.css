@@ -211,6 +211,30 @@ p {
   display: none;
 }
 
+/* --- Book a Visit Button (Header) --- */
+.header-book-btn {
+  display: none;
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  min-height: 44px;
+  align-items: center;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.header-book-btn:hover,
+.header-book-btn:focus {
+  background-color: #c41a1f;
+  color: var(--color-text-inverse);
+  transform: translateY(-1px);
+}
+
 /* --- Navigation --- */
 .main-nav {
   display: none;
@@ -438,6 +462,90 @@ body {
   color: var(--color-text-light);
   font-size: 0.95rem;
   margin-bottom: 0;
+}
+
+/* ==========================================================================
+   VEHICLES WE SERVICE
+   ========================================================================== */
+
+.vehicles-section {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.vehicles-section h2 {
+  color: var(--color-text-inverse);
+}
+
+.vehicle-brands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.brand-item {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 16px 12px;
+  text-align: center;
+  transition: background-color var(--transition), border-color var(--transition);
+}
+
+.brand-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.brand-item.european {
+  border-color: var(--color-accent);
+}
+
+.brand-item.european:hover {
+  background-color: rgba(227, 30, 36, 0.1);
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   AMENITIES STRIP
+   ========================================================================== */
+
+.amenities-strip {
+  background-color: var(--color-bg-alt);
+  padding: 32px 0;
+  border-top: 3px solid var(--color-accent);
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.amenity-item svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.amenity-item span {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-text);
 }
 
 /* ==========================================================================
@@ -878,6 +986,32 @@ body {
   font-size: 0.9rem;
 }
 
+.footer-directions-btn {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 12px;
+  transition: background-color var(--transition);
+}
+
+.footer-directions-btn:hover {
+  background-color: #c41a1f;
+  color: var(--color-text-inverse);
+}
+
+.footer-services a {
+  min-height: auto !important;
+  padding: 3px 0 !important;
+  font-size: 0.85rem !important;
+}
+
 .footer-section h4 {
   color: var(--color-text-inverse);
   font-size: 1rem;
@@ -1225,6 +1359,22 @@ body {
     display: inline;
   }
 
+  .header-book-btn {
+    display: inline-flex;
+  }
+
+  .vehicle-brands {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .service-landing-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1289,7 +1439,15 @@ body {
   }
 
   .footer-grid {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr;
+  }
+
+  .vehicle-brands {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .specials-services-grid {
