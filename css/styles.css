@@ -497,7 +497,7 @@ a.brand-item:hover {
 
 .brand-item {
   background-color: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-accent);
   border-radius: 8px;
   padding: 16px 12px;
   text-align: center;
@@ -505,22 +505,52 @@ a.brand-item:hover {
 }
 
 .brand-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.brand-item.european {
-  border-color: var(--color-accent);
-}
-
-.brand-item.european:hover {
   background-color: rgba(227, 30, 36, 0.1);
+  border-color: var(--color-accent);
 }
 
 .brand-name {
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
+}
+
+.brand-item-all {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.brand-item-all:hover {
+  background-color: #c41a1f;
+  border-color: #c41a1f;
+}
+
+/* --- Browse by Make Grid (All Other Makes page) --- */
+.make-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.make-link-card {
+  display: block;
+  padding: 14px 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: all var(--transition);
+}
+
+.make-link-card:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: rgba(227, 30, 36, 0.04);
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -1433,6 +1463,10 @@ a.brand-item:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .make-links-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .make-issues-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1497,6 +1531,10 @@ a.brand-item:hover {
 
   .make-issues-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .make-links-grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .specials-services-grid {
