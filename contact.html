@@ -84,6 +84,21 @@
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+
+  <!-- ====== EMERGENCY BANNER ====== -->
+  <div class="emergency-banner" role="complementary" aria-label="Emergency service">
+    <div class="emergency-banner-inner">
+      <span class="emergency-icon" aria-hidden="true">🚨</span>
+      <p><strong>Car trouble?</strong> Same-day service available — call now!</p>
+      <a href="tel:3194507584" class="emergency-banner-cta">(319) 450-7584</a>
+    </div>
+  </div>
+
+  <!-- ====== FLOATING CALL BUTTON (Mobile) ====== -->
+  <a href="tel:3194507584" class="floating-call-btn" aria-label="Call Cedar Automotive now">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.66 1 1 0 01-.24 1.01l-2.23 2.12z"/></svg>
+  </a>
+
   <!-- ====== HEADER ====== -->
   <header class="site-header" role="banner">
     <div class="header-inner">
@@ -193,6 +208,81 @@
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- ====== APPOINTMENT REQUEST FORM ====== -->
+    <section class="section-padding appointment-section" aria-labelledby="appointment-heading">
+      <div class="container">
+        <h2 id="appointment-heading" class="text-center">Request an Appointment</h2>
+        <span class="accent-bar"></span>
+        <p class="text-center" style="max-width:600px;margin:0 auto 2rem;">Fill out the form below and we'll call you back to confirm your appointment. For urgent needs, call us directly.</p>
+
+        <form name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="appointment-form">
+          <input type="hidden" name="form-name" value="appointment">
+          <p class="hidden-field" style="display:none;">
+            <label>Don't fill this out: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="John Smith" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required placeholder="(319) 555-1234" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="preferred-date">Preferred Date</label>
+              <input type="date" id="preferred-date" name="preferred-date">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vehicle">Vehicle (Year, Make, Model) <span class="required">*</span></label>
+              <input type="text" id="vehicle" name="vehicle" required placeholder="2019 BMW 330i">
+            </div>
+            <div class="form-group">
+              <label for="service-type">Service Needed <span class="required">*</span></label>
+              <select id="service-type" name="service-type" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="Engine Diagnostics">Engine Diagnostics</option>
+                <option value="Brake Repair">Brake Repair</option>
+                <option value="Oil Change">Oil Change</option>
+                <option value="Transmission Service">Transmission Service</option>
+                <option value="Electrical Diagnostics">Electrical Diagnostics</option>
+                <option value="Suspension & Steering">Suspension & Steering</option>
+                <option value="Heating & AC">Heating & AC</option>
+                <option value="Car Key Programming">Car Key Programming</option>
+                <option value="Pre-Purchase Inspection">Pre-Purchase Inspection</option>
+                <option value="Preventive Maintenance">Preventive Maintenance</option>
+                <option value="European Vehicle Service">European Vehicle Service</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="description">Describe the Issue</label>
+            <textarea id="description" name="description" rows="4" placeholder="Tell us what's going on with your vehicle — warning lights, noises, performance issues, etc."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17 12l-5-5v3H5v4h7v3z"/></svg>
+            Request Appointment
+          </button>
+
+          <p class="form-note">We'll call you within 1 business day to confirm. Same-day appointments often available!</p>
+        </form>
       </div>
     </section>
 

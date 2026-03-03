@@ -771,6 +771,118 @@ a.brand-item:hover {
 }
 
 /* ==========================================================================
+   APPOINTMENT FORM
+   ========================================================================== */
+
+.appointment-section {
+  background: var(--color-bg-alt, #f5f5f5);
+}
+
+.appointment-form {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,.08);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: .9rem;
+  margin-bottom: .35rem;
+  color: #222;
+}
+
+.form-group label .required {
+  color: var(--color-accent, #d32f2f);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: .7rem .85rem;
+  border: 1.5px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fafafa;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent, #d32f2f);
+  box-shadow: 0 0 0 3px rgba(211,47,47,.12);
+  background: #fff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: var(--color-accent, #d32f2f);
+  color: #fff;
+  border: none;
+  padding: .85rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .2s, transform .15s;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-submit-btn:hover {
+  background: #b71c1c;
+  transform: translateY(-1px);
+}
+
+.form-submit-btn svg {
+  flex-shrink: 0;
+}
+
+.form-note {
+  text-align: center;
+  font-size: .85rem;
+  color: #666;
+  margin-top: .75rem;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .appointment-form {
+    padding: 1.25rem;
+  }
+}
+
+/* ==========================================================================
    CTA BANNER (reusable)
    ========================================================================== */
 
@@ -821,18 +933,19 @@ a.brand-item:hover {
 }
 
 /* ==========================================================================
-   PROMO BANNER (homepage sticky offer)
+   EMERGENCY BANNER
    ========================================================================== */
 
-.promo-banner {
-  background: linear-gradient(135deg, var(--color-accent), #c41a1f);
+.emergency-banner {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
   color: var(--color-text-inverse);
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 20px;
   position: relative;
+  border-bottom: 3px solid var(--color-accent);
 }
 
-.promo-banner-inner {
+.emergency-banner-inner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -842,54 +955,137 @@ a.brand-item:hover {
   margin: 0 auto;
 }
 
-.promo-banner p {
+.emergency-banner p {
   margin: 0;
   font-size: 0.95rem;
   font-weight: 600;
 }
 
-.promo-banner strong {
+.emergency-banner strong {
   font-weight: 800;
-  font-size: 1rem;
+  color: var(--color-accent);
 }
 
-.promo-banner-link {
+.emergency-icon {
+  font-size: 1.1rem;
+}
+
+.emergency-banner-cta {
   display: inline-block;
-  background-color: var(--color-text-inverse);
-  color: var(--color-accent);
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 8px 20px;
-  border-radius: 50px;
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 6px 18px;
+  border-radius: 4px;
   text-decoration: none;
-  white-space: nowrap;
+  min-height: 36px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
   transition: background-color var(--transition), transform var(--transition);
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
-.promo-banner-link:hover,
-.promo-banner-link:focus {
-  background-color: #f5f5f5;
-  color: var(--color-accent);
+.emergency-banner-cta:hover,
+.emergency-banner-cta:focus {
+  background-color: #c41a1f;
+  color: var(--color-text-inverse);
   transform: translateY(-1px);
 }
 
-.promo-dismiss {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 4px 8px;
-  line-height: 1;
-  transition: color var(--transition);
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(227, 30, 36, 0.4); }
+  50% { box-shadow: 0 0 12px 4px rgba(227, 30, 36, 0.3); }
 }
 
-.promo-dismiss:hover {
+/* ==========================================================================
+   FLOATING CALL BUTTON (Mobile Only)
+   ========================================================================== */
+
+.floating-call-btn {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-accent);
   color: var(--color-text-inverse);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(227, 30, 36, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+  animation: float-pulse 3s ease-in-out infinite;
+}
+
+.floating-call-btn:hover,
+.floating-call-btn:focus {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(227, 30, 36, 0.5), 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: var(--color-text-inverse);
+}
+
+@keyframes float-pulse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@media (max-width: 768px) {
+  .floating-call-btn {
+    display: flex;
+  }
+}
+
+/* ==========================================================================
+   TRUST STACK
+   ========================================================================== */
+
+.trust-stack {
+  background-color: var(--color-primary);
+  padding: 16px 0;
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.trust-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-inverse);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.trust-icon {
+  font-size: 1rem;
+}
+
+.trust-label {
+  letter-spacing: 0.3px;
+}
+
+@media (min-width: 768px) {
+  .trust-items {
+    gap: 16px;
+  }
+  .trust-item {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
 }
 
 /* ==========================================================================
