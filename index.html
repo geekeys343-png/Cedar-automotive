@@ -79,6 +79,7 @@
         "name": "Cedar Rapids",
         "addressRegion": "IA"
       },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
       "Eastern Iowa"
     ],
     "hasOfferCatalog": {
@@ -98,8 +99,16 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Airport Drop-Off Service"}}
       ]
     },
-    "knowsAbout": ["European vehicle repair", "BMW repair", "Audi repair", "Mercedes-Benz repair", "Volvo repair", "auto repair", "all makes and models", "car key programming", "key fob programming"],
-    "sameAs": [],
+    "knowsAbout": ["European vehicle repair", "BMW repair", "Audi repair", "Mercedes-Benz repair", "Volvo repair", "auto repair", "all makes and models", "car key programming", "key fob programming", "European car specialist Cedar Rapids", "auto mechanic Cedar Rapids Iowa", "car repair Cedar Rapids IA", "same day auto repair Cedar Rapids"],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -172,6 +181,30 @@
   <link rel="preload" href="css/styles.css" as="style">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cedar Automotive — Auto Repair in Cedar Rapids, IA | All Makes & Models",
+    "url": "https://cedar-automotive.com/",
+    "description": "Cedar Automotive — Cedar Rapids auto repair for all makes and models. Car key programming, European vehicle specialists, airport drop-off. Call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1","main p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Cedar Automotive — Auto Repair in Cedar Rapids, IA"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>

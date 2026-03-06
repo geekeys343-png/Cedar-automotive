@@ -100,7 +100,15 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Airport Drop-Off Service"}}
       ]
     },
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -178,6 +186,35 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Auto Repair Near Hiawatha, IA | Cedar Automotive &mdash; Cedar Rapids",
+    "url": "https://cedar-automotive.com/locations/hiawatha.html",
+    "description": "Auto repair near Hiawatha, IA? Cedar Automotive in Cedar Rapids is just minutes away. All makes &amp; models, European specialists, same-day service. Call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#service-heading",".service-landing-text p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "AutoRepair",
+      "name": "Cedar Automotive",
+      "@id": "https://cedar-automotive.com/#autorepair"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Auto Repair Near Hiawatha, IA"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -350,6 +387,31 @@
       </div>
     </section>
 
+    <!-- ====== SERVICE PAGES FOR THIS CITY ====== -->
+    <section class="section-padding" aria-labelledby="city-services-heading">
+      <div class="container">
+        <h2 id="city-services-heading" class="text-center">Hiawatha Auto Repair Services</h2>
+        <span class="accent-bar"></span>
+        <div class="related-services-grid">
+          <a href="hiawatha/brake-repair.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f6d1;</span> Brake Repair
+          </a>
+          <a href="hiawatha/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f6e2;&#xfe0f;</span> Oil Change
+          </a>
+          <a href="hiawatha/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f50d;</span> Engine Diagnostics
+          </a>
+          <a href="hiawatha/transmission-service.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x2699;&#xfe0f;</span> Transmission Service
+          </a>
+          <a href="hiawatha/heating-air-conditioning.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x2744;&#xfe0f;</span> Heating & AC
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- ====== RELATED CITIES ====== -->
     <section class="section-padding" aria-labelledby="related-heading">
       <div class="container">
@@ -381,6 +443,7 @@
       </div>
     </section>
 
+    
     <!-- ====== FAQ SECTION ====== -->
     <section class="section-padding" aria-labelledby="faq-heading">
       <div class="container">

@@ -71,13 +71,16 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "areaServed": [
       {
         "@type": "City",
         "name": "Cedar Rapids",
         "addressRegion": "IA"
       },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
       "Eastern Iowa"
     ],
     "hasOfferCatalog": {
@@ -103,7 +106,13 @@
         }
       ]
     },
-    "knowsAbout": ["Audi repair", "European vehicle repair", "Audi TSI engine", "Audi TFSI engine", "Audi Quattro", "Audi DSG transmission", "Audi S-tronic", "Audi MMI diagnostics"],
+    "knowsAbout": ["Audi repair", "European vehicle repair", "Audi TSI engine", "Audi TFSI engine", "Audi Quattro", "Audi DSG transmission", "Audi S-tronic", "Audi MMI diagnostics", "European car specialist Cedar Rapids", "auto mechanic Cedar Rapids Iowa", "car repair Cedar Rapids IA", "same day auto repair Cedar Rapids"],
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -181,6 +190,35 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Audi Repair & Service — Cedar Automotive | Cedar Rapids, IA",
+    "url": "https://cedar-automotive.com/makes/audi.html",
+    "description": "Expert Audi repair in Cedar Rapids, IA. European specialist with dealer-level diagnostics for TSI, TFSI, Quattro, DSG &amp; S-tronic systems. All Audi models. Call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#service-heading",".service-landing-text p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Audi Repair",
+      "provider": { "@type": "AutoRepair", "name": "Cedar Automotive" }
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Audi Repair & Service — Cedar Automotive"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -382,6 +420,7 @@
       </div>
     </section>
 
+    
     <!-- ====== FAQ SECTION ====== -->
     <section class="section-padding" aria-labelledby="faq-heading">
       <div class="container">

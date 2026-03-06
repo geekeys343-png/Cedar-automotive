@@ -71,7 +71,9 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Electrical Diagnostic Services",
@@ -86,6 +88,12 @@
         }
       ]
     },
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -155,6 +163,90 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Electrical System Diagnostics — Cedar Automotive | Cedar Rapids, IA",
+    "url": "https://cedar-automotive.com/services/electrical-diagnostics.html",
+    "description": "Auto electrical system diagnostics and repair in Cedar Rapids, IA. Battery, alternator, starter, wiring, and sensor issues. Cedar Automotive — call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#service-heading",".service-landing-text p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Electrical System Diagnostics — Cedar Automotive",
+      "provider": { "@type": "AutoRepair", "name": "Cedar Automotive" }
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Electrical System Diagnostics — Cedar Automotive"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
+
+  <!-- Service JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Electrical System Diagnostics — Cedar Automotive",
+    "description": "Auto electrical system diagnostics and repair in Cedar Rapids, IA. Battery, alternator, starter, wiring, and sensor issues. Cedar Automotive — call (319) 450-7584.",
+    "url": "https://cedar-automotive.com/services/electrical-diagnostics.html",
+    "serviceType": "Electrical System Diagnostics — Cedar Automotive",
+    "category": "Automotive Repair",
+    "provider": {
+      "@type": "AutoRepair",
+      "name": "Cedar Automotive",
+      "@id": "https://cedar-automotive.com/#autorepair"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Cedar Rapids", "addressRegion": "IA" },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
+      "Eastern Iowa"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Electrical System Diagnostics — Cedar Automotive Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Battery testing and replacement" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alternator testing and repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Starter motor diagnosis and replacement" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Parasitic battery drain testing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wiring harness repair and diagnostics" } }
+      ]
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://cedar-automotive.com/contact.html",
+      "servicePhone": {
+        "@type": "ContactPoint",
+        "telephone": "(319) 450-7584",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "serviceLocation": {
+        "@type": "Place",
+        "name": "Cedar Automotive",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1407 Adair Ct SW Suite 101",
+          "addressLocality": "Cedar Rapids",
+          "addressRegion": "IA",
+          "postalCode": "52404"
+        }
+      }
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>

@@ -71,13 +71,16 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "areaServed": [
       {
         "@type": "City",
         "name": "Cedar Rapids",
         "addressRegion": "IA"
       },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
       "Eastern Iowa"
     ],
     "hasOfferCatalog": {
@@ -94,6 +97,12 @@
         }
       ]
     },
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -163,6 +172,90 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Engine Diagnostics & Repair — Cedar Automotive | Cedar Rapids, IA",
+    "url": "https://cedar-automotive.com/services/engine-diagnostics.html",
+    "description": "Professional engine diagnostics and repair in Cedar Rapids, IA. Check engine light on? Cedar Automotive uses dealer-level equipment to find and fix the problem fast. Call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#service-heading",".service-landing-text p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Engine Diagnostics &amp; Repair — Cedar Automotive",
+      "provider": { "@type": "AutoRepair", "name": "Cedar Automotive" }
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Engine Diagnostics & Repair — Cedar Automotive"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
+
+  <!-- Service JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Engine Diagnostics & Repair — Cedar Automotive",
+    "description": "Professional engine diagnostics and repair in Cedar Rapids, IA. Check engine light on? Cedar Automotive uses dealer-level equipment to find and fix the problem fast. Call (319) 450-7584.",
+    "url": "https://cedar-automotive.com/services/engine-diagnostics.html",
+    "serviceType": "Engine Diagnostics & Repair — Cedar Automotive",
+    "category": "Automotive Repair",
+    "provider": {
+      "@type": "AutoRepair",
+      "name": "Cedar Automotive",
+      "@id": "https://cedar-automotive.com/#autorepair"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Cedar Rapids", "addressRegion": "IA" },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
+      "Eastern Iowa"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Engine Diagnostics & Repair — Cedar Automotive Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Check engine light diagnosis and fault code reading" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Engine misfire and rough idle troubleshooting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Overheating and coolant system issues" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Loss of power and poor acceleration" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Timing belt and timing chain replacement" } }
+      ]
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://cedar-automotive.com/contact.html",
+      "servicePhone": {
+        "@type": "ContactPoint",
+        "telephone": "(319) 450-7584",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "serviceLocation": {
+        "@type": "Place",
+        "name": "Cedar Automotive",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1407 Adair Ct SW Suite 101",
+          "addressLocality": "Cedar Rapids",
+          "addressRegion": "IA",
+          "postalCode": "52404"
+        }
+      }
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -317,6 +410,49 @@
           </a>
           <a href="preventive-maintenance.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">🛡️</span> Preventive Maintenance
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICE AREAS ====== -->
+    <section class="section-padding" style="background-color: var(--color-bg-alt);" aria-labelledby="areas-heading">
+      <div class="container">
+        <h2 id="areas-heading" class="text-center">Engine Diagnostics by Location</h2>
+        <span class="accent-bar"></span>
+        <div class="related-services-grid">
+          <a href="../locations/marion/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Marion
+          </a>
+          <a href="../locations/hiawatha/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Hiawatha
+          </a>
+          <a href="../locations/north-liberty/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> North Liberty
+          </a>
+          <a href="../locations/iowa-city/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Iowa City
+          </a>
+          <a href="../locations/coralville/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Coralville
+          </a>
+          <a href="../locations/solon/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Solon
+          </a>
+          <a href="../locations/mount-vernon/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Mount Vernon
+          </a>
+          <a href="../locations/anamosa/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Anamosa
+          </a>
+          <a href="../locations/fairfax/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Fairfax
+          </a>
+          <a href="../locations/swisher/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Swisher
+          </a>
+          <a href="../locations/cedar-rapids/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Cedar Rapids
           </a>
         </div>
       </div>

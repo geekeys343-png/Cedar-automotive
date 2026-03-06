@@ -71,13 +71,16 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "areaServed": [
       {
         "@type": "City",
         "name": "Cedar Rapids",
         "addressRegion": "IA"
       },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
       "Eastern Iowa"
     ],
     "hasOfferCatalog": {
@@ -102,6 +105,12 @@
         }
       ]
     },
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -179,6 +188,35 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Nissan Repair & Service — Cedar Automotive | Cedar Rapids, IA",
+    "url": "https://cedar-automotive.com/makes/nissan.html",
+    "description": "Expert Nissan repair in Cedar Rapids, IA. Altima, Rogue, Sentra, Pathfinder, Frontier, Titan — CVT transmission, engine diagnostics, and more. Call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#service-heading",".service-landing-text p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Nissan Repair",
+      "provider": { "@type": "AutoRepair", "name": "Cedar Automotive" }
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Nissan Repair & Service — Cedar Automotive"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -387,6 +425,7 @@
       </div>
     </section>
 
+    
     <!-- ====== FAQ SECTION ====== -->
     <section class="section-padding" aria-labelledby="faq-heading">
       <div class="container">

@@ -66,7 +66,9 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Airport Drop-Off Service",
@@ -81,6 +83,12 @@
         }
       ]
     },
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -148,6 +156,90 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Airport Drop-Off Auto Repair — Cedar Automotive | Cedar Rapids, IA",
+    "url": "https://cedar-automotive.com/services/airport-drop-off.html",
+    "description": "Drop your car off for repair before your flight at Cedar Rapids Airport (CID). Pick it up fixed when you return. Cedar Automotive — call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#service-heading",".service-landing-text p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Airport Drop-Off Auto Repair — Cedar Automotive",
+      "provider": { "@type": "AutoRepair", "name": "Cedar Automotive" }
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Airport Drop-Off Auto Repair — Cedar Automotive"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
+
+  <!-- Service JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Airport Drop-Off Auto Repair — Cedar Automotive",
+    "description": "Drop your car off for repair before your flight at Cedar Rapids Airport (CID). Pick it up fixed when you return. Cedar Automotive — call (319) 450-7584.",
+    "url": "https://cedar-automotive.com/services/airport-drop-off.html",
+    "serviceType": "Airport Drop-Off Auto Repair — Cedar Automotive",
+    "category": "Automotive Repair",
+    "provider": {
+      "@type": "AutoRepair",
+      "name": "Cedar Automotive",
+      "@id": "https://cedar-automotive.com/#autorepair"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Cedar Rapids", "addressRegion": "IA" },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
+      "Eastern Iowa"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Airport Drop-Off Auto Repair — Cedar Automotive Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Call (319) 450-7584 to schedule your service before your trip" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drop your car off at 1407 Adair Ct SW Suite 101 on your way to the airport" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "We diagnose and repair your vehicle while you travel" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "We call you with updates and approval before any work begins" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pick up your car — fixed and ready — when you return from your trip" } }
+      ]
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://cedar-automotive.com/contact.html",
+      "servicePhone": {
+        "@type": "ContactPoint",
+        "telephone": "(319) 450-7584",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "serviceLocation": {
+        "@type": "Place",
+        "name": "Cedar Automotive",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1407 Adair Ct SW Suite 101",
+          "addressLocality": "Cedar Rapids",
+          "addressRegion": "IA",
+          "postalCode": "52404"
+        }
+      }
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>

@@ -71,7 +71,9 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "areaServed": [
       {
         "@type": "City",
@@ -114,6 +116,12 @@
         }
       ]
     },
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -191,6 +199,35 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Auto Repair Near Coralville, IA | Cedar Automotive — Cedar Rapids",
+    "url": "https://cedar-automotive.com/locations/coralville.html",
+    "description": "Auto repair near Coralville, IA? Cedar Automotive in Cedar Rapids is an easy drive via I-380. European specialists, same-day service, warranty on all repairs. Call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".page-header h1",".page-header p",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "AutoRepair",
+      "name": "Cedar Automotive",
+      "@id": "https://cedar-automotive.com/#autorepair"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Auto Repair Near Coralville, IA"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -363,6 +400,31 @@
       </div>
     </section>
 
+    <!-- ====== SERVICE PAGES FOR THIS CITY ====== -->
+    <section class="section-padding" aria-labelledby="city-services-heading">
+      <div class="container">
+        <h2 id="city-services-heading" class="text-center">Coralville Auto Repair Services</h2>
+        <span class="accent-bar"></span>
+        <div class="related-services-grid">
+          <a href="coralville/brake-repair.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f6d1;</span> Brake Repair
+          </a>
+          <a href="coralville/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f6e2;&#xfe0f;</span> Oil Change
+          </a>
+          <a href="coralville/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f50d;</span> Engine Diagnostics
+          </a>
+          <a href="coralville/transmission-service.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x2699;&#xfe0f;</span> Transmission Service
+          </a>
+          <a href="coralville/heating-air-conditioning.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x2744;&#xfe0f;</span> Heating & AC
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- ====== RELATED CITY PAGES ====== -->
     <section class="section-padding" style="background-color: var(--color-bg-alt);" aria-labelledby="areas-heading">
       <div class="container">
@@ -397,6 +459,7 @@
       </div>
     </section>
 
+    
     <!-- ====== FAQ SECTION ====== -->
     <section class="section-padding" aria-labelledby="faq-heading">
       <div class="container">

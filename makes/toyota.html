@@ -73,7 +73,9 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Toyota Repair Services",
@@ -97,7 +99,13 @@
         }
       ]
     },
-    "knowsAbout": ["Toyota repair", "Toyota maintenance", "Camry repair", "RAV4 service", "Tacoma repair", "Corolla service", "Highlander repair", "Toyota hybrid service", "all makes and models"],
+    "knowsAbout": ["Toyota repair", "Toyota maintenance", "Camry repair", "RAV4 service", "Tacoma repair", "Corolla service", "Highlander repair", "Toyota hybrid service", "all makes and models", "European car specialist Cedar Rapids", "auto mechanic Cedar Rapids Iowa", "car repair Cedar Rapids IA", "same day auto repair Cedar Rapids"],
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -175,6 +183,35 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Toyota Repair & Service — Cedar Automotive | Cedar Rapids, IA",
+    "url": "https://cedar-automotive.com/makes/toyota.html",
+    "description": "Expert Toyota repair and service in Cedar Rapids, IA. Camry, RAV4, Tacoma, Corolla, Highlander — factory-level maintenance at independent shop prices. Call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".page-header h1",".page-header p",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Toyota Repair",
+      "provider": { "@type": "AutoRepair", "name": "Cedar Automotive" }
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Toyota Repair & Service — Cedar Automotive"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -383,6 +420,7 @@
       </div>
     </section>
 
+    
     <!-- ====== FAQ SECTION ====== -->
     <section class="section-padding" aria-labelledby="faq-heading">
       <div class="container">

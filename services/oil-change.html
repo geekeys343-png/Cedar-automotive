@@ -71,7 +71,9 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Oil Change & Fluid Services",
@@ -86,6 +88,12 @@
         }
       ]
     },
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -155,6 +163,90 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Oil Changes & Fluid Services — Cedar Automotive | Cedar Rapids, IA",
+    "url": "https://cedar-automotive.com/services/oil-change.html",
+    "description": "Conventional and synthetic oil changes in Cedar Rapids, IA. Plus coolant flush, transmission fluid, and power steering service. Cedar Automotive — call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#service-heading",".service-landing-text p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Oil Changes &amp; Fluid Services — Cedar Automotive",
+      "provider": { "@type": "AutoRepair", "name": "Cedar Automotive" }
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Oil Changes & Fluid Services — Cedar Automotive"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
+
+  <!-- Service JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Oil Changes & Fluid Services — Cedar Automotive",
+    "description": "Conventional and synthetic oil changes in Cedar Rapids, IA. Plus coolant flush, transmission fluid, and power steering service. Cedar Automotive — call (319) 450-7584.",
+    "url": "https://cedar-automotive.com/services/oil-change.html",
+    "serviceType": "Oil Changes & Fluid Services — Cedar Automotive",
+    "category": "Automotive Repair",
+    "provider": {
+      "@type": "AutoRepair",
+      "name": "Cedar Automotive",
+      "@id": "https://cedar-automotive.com/#autorepair"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Cedar Rapids", "addressRegion": "IA" },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
+      "Eastern Iowa"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Oil Changes & Fluid Services — Cedar Automotive Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conventional oil change" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full synthetic oil change" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "European-spec synthetic oil change (BMW LL-01, VW 502/505, MB 229.5)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "High-mileage oil change" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oil filter replacement" } }
+      ]
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://cedar-automotive.com/contact.html",
+      "servicePhone": {
+        "@type": "ContactPoint",
+        "telephone": "(319) 450-7584",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "serviceLocation": {
+        "@type": "Place",
+        "name": "Cedar Automotive",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1407 Adair Ct SW Suite 101",
+          "addressLocality": "Cedar Rapids",
+          "addressRegion": "IA",
+          "postalCode": "52404"
+        }
+      }
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -303,6 +395,49 @@
           </a>
           <a href="brake-repair.html" class="related-service-link">
             <span class="rs-icon" aria-hidden="true">🛑</span> Brake Service &amp; Repair
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICE AREAS ====== -->
+    <section class="section-padding" style="background-color: var(--color-bg-alt);" aria-labelledby="areas-heading">
+      <div class="container">
+        <h2 id="areas-heading" class="text-center">Oil Change by Location</h2>
+        <span class="accent-bar"></span>
+        <div class="related-services-grid">
+          <a href="../locations/marion/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Marion
+          </a>
+          <a href="../locations/hiawatha/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Hiawatha
+          </a>
+          <a href="../locations/north-liberty/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> North Liberty
+          </a>
+          <a href="../locations/iowa-city/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Iowa City
+          </a>
+          <a href="../locations/coralville/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Coralville
+          </a>
+          <a href="../locations/solon/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Solon
+          </a>
+          <a href="../locations/mount-vernon/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Mount Vernon
+          </a>
+          <a href="../locations/anamosa/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Anamosa
+          </a>
+          <a href="../locations/fairfax/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Fairfax
+          </a>
+          <a href="../locations/swisher/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Swisher
+          </a>
+          <a href="../locations/cedar-rapids/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#128205;</span> Cedar Rapids
           </a>
         </div>
       </div>

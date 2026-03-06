@@ -71,7 +71,9 @@
         "closes": "17:00"
       }
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404"
+    ],
     "areaServed": [
       {
         "@type": "City",
@@ -83,6 +85,7 @@
         "name": "Cedar Rapids",
         "addressRegion": "IA"
       },
+      { "@type": "State", "name": "Iowa", "identifier": "IA" },
       "Eastern Iowa"
     ],
     "hasOfferCatalog": {
@@ -108,7 +111,13 @@
         }
       ]
     },
-    "knowsAbout": ["auto repair near Marion IA", "European vehicle repair", "brake repair", "oil change", "car key programming", "engine diagnostics", "transmission service"],
+    "knowsAbout": ["auto repair near Marion IA", "European vehicle repair", "brake repair", "oil change", "car key programming", "engine diagnostics", "transmission service", "European car specialist Cedar Rapids", "auto mechanic Cedar Rapids Iowa", "car repair Cedar Rapids IA", "same day auto repair Cedar Rapids"],
+    "additionalType": "http://www.wikidata.org/entity/Q11707",
+    "hasMap": "https://www.google.com/maps/place/1407+Adair+Ct+SW+Suite+101,+Cedar+Rapids,+IA+52404",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Affirm, Klarna",
+    "currenciesAccepted": "USD",
+    "isAccessibleForFree": false,
+    "slogan": "Full-service auto repair — European capable",
     "priceRange": "$$"
   }
   </script>
@@ -186,6 +195,35 @@
   <link rel="preload" href="../css/styles.css" as="style">
   <link rel="stylesheet" href="../css/styles.css">
   <script src="../js/main.js" defer></script>
+
+  <!-- Speakable + WebPage JSON-LD — AI Search Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Auto Repair Near Marion, IA | Cedar Automotive &mdash; Cedar Rapids",
+    "url": "https://cedar-automotive.com/locations/marion.html",
+    "description": "Looking for auto repair near Marion, IA? Cedar Automotive in Cedar Rapids is just 5 minutes away. European specialists, brakes, oil changes, car key programming. Call (319) 450-7584.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#service-heading",".service-landing-text p:first-of-type",".faq-item summary",".faq-item p"]
+    },
+    "mainEntity": {
+      "@type": "AutoRepair",
+      "name": "Cedar Automotive",
+      "@id": "https://cedar-automotive.com/#autorepair"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Auto Repair Near Marion, IA"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Cedar Automotive",
+      "url": "https://cedar-automotive.com"
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -359,6 +397,31 @@
       </div>
     </section>
 
+    <!-- ====== SERVICE PAGES FOR THIS CITY ====== -->
+    <section class="section-padding" aria-labelledby="city-services-heading">
+      <div class="container">
+        <h2 id="city-services-heading" class="text-center">Marion Auto Repair Services</h2>
+        <span class="accent-bar"></span>
+        <div class="related-services-grid">
+          <a href="marion/brake-repair.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f6d1;</span> Brake Repair
+          </a>
+          <a href="marion/oil-change.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f6e2;&#xfe0f;</span> Oil Change
+          </a>
+          <a href="marion/engine-diagnostics.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x1f50d;</span> Engine Diagnostics
+          </a>
+          <a href="marion/transmission-service.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x2699;&#xfe0f;</span> Transmission Service
+          </a>
+          <a href="marion/heating-air-conditioning.html" class="related-service-link">
+            <span class="rs-icon" aria-hidden="true">&#x2744;&#xfe0f;</span> Heating & AC
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- ====== RELATED CITY PAGES ====== -->
     <section class="section-padding" style="background-color: var(--color-bg-alt);" aria-labelledby="related-heading">
       <div class="container">
@@ -390,6 +453,7 @@
       </div>
     </section>
 
+    
     <!-- ====== FAQ SECTION ====== -->
     <section class="section-padding" aria-labelledby="faq-heading">
       <div class="container">
